@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: myjavaapp-rc
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     app: myjavaapp
     version: 2.6.2
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: myjavacontainer
-          image: maha4iac/myjavaapp01june25:2
+          image: maha4iac/myjavaapp01june25:1
           ports:
             - containerPort: 8080
